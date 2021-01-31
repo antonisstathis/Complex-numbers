@@ -1,5 +1,5 @@
 from trans import enterp,enterc,transp,transc
-from cproduct import add,mul,div,zparallel
+from cfunctions import add,mul,div,zparallel
 
 complex1={
   "real": 0.0,
