@@ -34,7 +34,10 @@ def div(complex1, complex2, complex3):
 
     if m2 == 0:
         print("Division impossible: second complex number is zero.")
-    if m2 != 0:
+    if m1 == 0:
+        complex3["measure"]=0
+        complex3["corner"]=0
+    if m2 != 0 and m1 != 0:
         m3 = m1 / m2
         c3 = c1 - c2
         if c3 == 360:
