@@ -65,3 +65,20 @@ def enterc(complex1):
     complex1["real"]=x
     complex1["im"]=y
     transp(complex1)
+
+def reset(complex1,complex2,complex3):
+
+    complex1["real"] = 0
+    complex1["im"] = 0
+    complex1["measure"] = 0
+    complex1["corner"] = 0
+
+    complex2["real"] = 0
+    complex2["im"] = 0
+    complex2["measure"] = 0
+    complex2["corner"] = 0
+
+    complex3["real"] = 0
+    complex3["im"] = 0
+    complex3["measure"] = 0
+    complex3["corner"] = 0
