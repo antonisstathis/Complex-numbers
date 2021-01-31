@@ -1,4 +1,5 @@
-from trans import enterp,enterc,transp,transc
+
+from trans import enterp,enterc,transp,transc,reset
 from cfunctions import add,mul,div,zparallel
 
 complex1={
@@ -27,7 +28,7 @@ com=[complex1,complex2]
 x="go"
 while x=="go":
     for i in range(2):
-        choice=input("Enter form:")    
+        choice=input("Enter form:")
         if choice=='p':
             enterp(com[i])
         if choice=='c':
@@ -49,4 +50,7 @@ while x=="go":
         transp(complex3)
 
     x=input("Enter 'go' or 'exit':")
+    reset(complex1,complex2,complex3)
     print("\n\n")
+
+
