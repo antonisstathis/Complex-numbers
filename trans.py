@@ -44,6 +44,9 @@ def transp(complex1):
         c=0
     if x<0 and y==0:
         c=180
+    if x==0 and y==0:
+        d=0
+        c=0
     print("Real="+str(x)+" Imaginary="+str(y))
     print("Measure="+str(d)+" Corner="+str(c))
     complex1["measure"]=d
