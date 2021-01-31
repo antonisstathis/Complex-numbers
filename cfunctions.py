@@ -22,6 +22,8 @@ def mul(complex1, complex2, complex3):
         c3 = 0
     if c3 > 360:
         c3 = 360 - c3
+    if m3 == 0:
+        c3=0
     complex3["measure"] = m3
     complex3["corner"] = c3
 
