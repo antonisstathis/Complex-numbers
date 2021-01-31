@@ -26,19 +26,22 @@ def mul(complex1,complex2,complex3):
     complex3["corner"]=c3
 
 def div(complex1,complex2,complex3):
-    m1=complex1["measure"]
-    c1=complex1["corner"]
-    m2=complex2["measure"]
-    c2=complex2["corner"]
-
-    m3=m1/m2
-    c3=c1-c2
-    if c3==360:
-        c3=0
-    if c3<0:
-        c3=360+c3
-    complex3["measure"]=m3
-    complex3["corner"]=c3
+    m1 = complex1["measure"]
+    c1 = complex1["corner"]
+    m2 = complex2["measure"]
+    c2 = complex2["corner"]
+ 
+    if m2==0:
+        print("Division impossible: second complex number is zero.")
+    if m2!=0:
+        m3 = m1 / m2
+        c3 = c1 - c2
+        if c3 == 360:
+            c3 = 0
+        if c3 < 0:
+            c3 = 360 + c3
+        complex3["measure"] = m3
+        complex3["corner"] = c3
 
 def zparallel(complex1,complex2,complex3):
 
