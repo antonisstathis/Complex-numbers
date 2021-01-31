@@ -45,8 +45,6 @@ while x=="go":
         div(complex1,complex2,complex3)
         transc(complex3)
     if choice=="zp":
-        print(complex1["real"])
-        print(complex2["real"])
         zparallel(complex1,complex2,complex3)
         transp(complex3)
 
